@@ -42,9 +42,22 @@ Gatekeep is a Wi-Fi-based cart control system inspired by **Gatekeeper** by Lobl
 
 ## Notes
 
+- Default Wi-Fi SSID: Exit_signal
+
+  Default password: 12345678
+  
+  You can change both in the code:
+
+  
+```cpp
+  const char* ssid = "Exit_signal"; 
+  const char* password = "12345678";
+ ```
+
 - RSSI thresholds (`-50 dBm`, `-70 dBm`) can be adjusted based on your store layout and desired zone distances.
 - BLE could provide a stealthier proximity detection, but is **not implemented** here because ESP8266 lacks BLE support.
 - The LED behavior simulates gate states and can be replaced or complemented by a buzzer, relay, or motor controller to physically lock/unlock gates.
+
 
 ---
 
